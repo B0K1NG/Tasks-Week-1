@@ -1,19 +1,30 @@
-function array () {
+function array (n, val1, arr) {
+console.log("Input: ")
+console.log("n = ", n)
+console.log("val1 = ", val1)
+console.log("arr = ", arr)
 
-console.log("Input:")
+console.log("Output: ")
 
-let n = 5;
-console.log("n =", n);
+let arrayJoin = n;
+for (i = 0; i < arrayJoin.length; i++) {
+    if(arrayJoin < val1) {
+        return (arrayJoin[i]);
+        } if(arrayJoin === val1) {
+            return (arrayJoin[i]);
+ } if(arrayJoin > val1) {
+    return (arrayJoin[i]);
+ }
+ else {
+    return
+ }
 
-let val1 = 6;
-console.log("val1 =", val1);
+}
+console.log(arrayJoin)
+}
 
-let arr = [2, 4, 6, 8, 10];
-let arrayJoin = arr.join(" ");
-console.log("arr =" , arrayJoin.toString() + " " + n);
-    
+arr = [2, 4, 6, 8, 10]
+n = arr.length;
+val1 = arr[2];
 
-
-};
-
-console.log(array());
+console.log(array(n, val1, arr))
